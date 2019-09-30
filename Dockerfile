@@ -10,5 +10,6 @@ FROM alpine
 
 WORKDIR /work
 
+COPY favicon.ico pizza.jpg /work/
 COPY --from=builder /work/server /work/server
 CMD ["/work/server"]
