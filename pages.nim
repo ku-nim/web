@@ -8,7 +8,7 @@ proc index*(): string =
         title:
           pageName
         meta(charset="utf-8")
-        link(rel="icon", href="/fabicon.ico", type="image/x-icon")
+        link(rel="icon", href="/favicon.ico", type="image/x-icon")
       htmlcc body:
         htmlcc `div`:
           htmlcc h1:
