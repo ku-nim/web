@@ -1,7 +1,7 @@
 import htmlcc
 
 proc index*(): string =
-  let pageName = "Kyoto University Nim Club - 京都大学 Nim 大好き倶楽部"
+  let pageName = "Kyoto University Nim daisuki club - 京都大学 Nim 大好き倶楽部"
   return
     htmlcc html:
       htmlcc head:
