@@ -13,4 +13,4 @@ proc handler(req: Request) {.async.} =
   else:
     await req.respond(Http404, "Not Found !!!!")
 
-waitFor server.serve(Port(parseInt(os.getEnv("PORT", "8080"))), handler)
+waitFor server.serve(Port(parseInt(os.getEnv("PORT", "8080"))), handler, "0.0.0.0")
