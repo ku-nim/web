@@ -1,6 +1,8 @@
 import htmlgen
 import macros
 
+export htmlgen
+
 macro htmlcc*(head:untyped, body: untyped): untyped =
   body.expectKind(nnkStmtList)
   echo lispRepr(body)
@@ -12,8 +14,3 @@ macro htmlcc*(head:untyped, body: untyped): untyped =
     result = newCall(head[0], head[1], html_val)
   elif head.kind in {nnkIdent}:
     result = newCall(head, html_val)
-
-#htmlcc html:
-#  "test"
-#  "test2"
-#  "test3"

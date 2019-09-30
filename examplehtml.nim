@@ -7,8 +7,9 @@ echo:
       title:
         "Kyoto University Nim Club"
     htmlcc body:
+      "test"
       h1:
         "Kyoto University Nim Club"
       "This is body"
       a "http://example.com":
-        "link"
+        "this is a link"
