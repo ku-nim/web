@@ -22,7 +22,7 @@ proc index*(): string =
           a(href="https://nim-lang.org/blog/2019/09/23/version-100-released.html"):
             "バージョン 1.0 リリース! (リンク先は公式ブログ)"
           br()
-          "おめでとう！！！ "
+          "おめでとう!!!"
           br()
           img(src="/pizza.jpg", alt="Pizza!")
         htmlcc footer:
